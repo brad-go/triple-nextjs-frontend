@@ -1,19 +1,40 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    /* Projects */
+    "incremental": true,
+
+    /* Language and Environment */
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "jsx": "preserve",
+
+    /* Modules */
     "module": "esnext",
     "moduleResolution": "node",
+    "baseUrl": "./src",
     "resolveJsonModule": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Emit */
+    "noEmit": true,
+
+    /* Interop Constraints */
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+
+    /* Completeness */
+    "skipLibCheck": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
