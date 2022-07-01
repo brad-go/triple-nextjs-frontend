@@ -70,8 +70,10 @@
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
-      "eslint",
-      "prettier --write"
+      "yarn lint:es:fix",
+      "yarn prettier:fix",
+      "yarn lint:style:fix",
+      "git add"
     ]
   },
   "husky": {
