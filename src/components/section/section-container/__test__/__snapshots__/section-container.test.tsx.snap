@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionContainer should render Section Container 1`] = `
+<div>
+  <section
+    class="sc-bczRLJ lcFMwZ"
+  />
+</div>
+`;
+
+exports[`SectionContainer should render children 1`] = `
+<div>
+  <section
+    class="sc-bczRLJ lcFMwZ"
+  >
+    <div>
+      Example
+    </div>
+  </section>
+</div>
+`;
