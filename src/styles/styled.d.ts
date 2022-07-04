@@ -5,8 +5,8 @@ declare module 'styled-components' {
     color: {
       white: string
       white100: string
-      brightGrayLight: string
-      brightGrayDark: string
+      brightGray: string
+      deepBrightGray: string
       gray: string
       gray200: string
       gray500: string
@@ -14,6 +14,7 @@ declare module 'styled-components' {
       gray800: string
       mint: string
       blue: string
+      gunmetal: string
     }
     boxShadow: {
       phoneFrame: string

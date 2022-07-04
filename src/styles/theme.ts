@@ -4,8 +4,8 @@ export const theme: DefaultTheme = {
   color: {
     white: '#fff',
     white100: '#fff1A',
-    brightGrayLight: '#fafafa',
-    brightGrayDark: '#f5f5f5',
+    brightGray: '#fafafa',
+    deepBrightGray: '#f5f5f5',
     gray: '#3a3a3a',
     gray200: '#3a3a3a33',
     gray500: '#3a3a3a80',
@@ -13,6 +13,7 @@ export const theme: DefaultTheme = {
     gray800: '#3a3a3acc',
     mint: '#26cec2',
     blue: '#3666ff',
+    gunmetal: '#233332fa',
   },
   boxShadow: {
     phoneFrame:
