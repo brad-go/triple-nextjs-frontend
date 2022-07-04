@@ -1,17 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionContainer should render Section Container 1`] = `
+.c0 {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  background-origin: inherit;
+  background-clip: inherit;
+  background-color: inherit;
+}
+
 <div>
   <section
-    class="sc-bczRLJ lcFMwZ"
+    class="c0"
   />
 </div>
 `;
 
 exports[`SectionContainer should render children 1`] = `
+.c0 {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  background-origin: inherit;
+  background-clip: inherit;
+  background-color: inherit;
+}
+
 <div>
   <section
-    class="sc-bczRLJ lcFMwZ"
+    class="c0"
   >
     <div>
       Example

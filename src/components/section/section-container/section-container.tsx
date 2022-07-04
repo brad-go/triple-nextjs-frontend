@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components'
 
-import type { SectionBackgroundStyle } from 'types'
-
-interface SectionContainerProps {
-  backgroundStyle?: SectionBackgroundStyle
-}
+export type SectionBackgroundStyle =
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'toolbox'
+  | 'recruit'
+  | 'footer'
 
 const SECTION_BACKGROUND_STYLES: Partial<
   Record<SectionBackgroundStyle, ReturnType<typeof css>>
@@ -36,7 +38,9 @@ const SECTION_BACKGROUND_STYLES: Partial<
   `,
 }
 
-const SectionContainer = styled.section<SectionContainerProps>`
+const SectionContainer = styled.section<{
+  backgroundStyle?: SectionBackgroundStyle
+}>`
   position: relative;
   background-position: center center;
   background-size: cover;
