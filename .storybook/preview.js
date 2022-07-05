@@ -1,7 +1,9 @@
 import React from 'react'
+import * as NextImage from 'next/image'
+
 import { ThemeProvider } from 'styled-components'
-import { theme } from 'styles/theme'
 import { GlobalStyle } from 'styles/global-style.ts'
+import { theme } from 'styles/theme'
 
 export const decorators = [
   (Story) => (
@@ -21,3 +23,10 @@ export const parameters = {
     },
   },
 }
+
+const OriginalNextImage = NextImage.default
+
+Object.defineProperty(NextImage, 'default', {
+  configurable: true,
+  value: (props) => <OriginalNextImage {...props} unoptimized />,
+})
