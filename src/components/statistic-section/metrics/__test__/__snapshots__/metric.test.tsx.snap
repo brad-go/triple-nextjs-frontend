@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Metric should be rendered 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 strong {
+  font-weight: bold;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #3a3a3a;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width:1142px) {
+  .c1 {
+    font-size: 36px;
+    -webkit-letter-spacing: -1px;
+    -moz-letter-spacing: -1px;
+    -ms-letter-spacing: -1px;
+    letter-spacing: -1px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c1 {
+    font-size: 20px;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1142px) {
+  .c0 {
+    margin-left: 623px;
+    padding-top: 150px;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c0 {
+    text-align: center;
+    row-gap: 10px;
+  }
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <li
+      class="c1"
+    >
+      <strong>
+        <span>
+          0
+        </span>
+        만 명의
+      </strong>
+      여행자
+    </li>
+    <li
+      class="c1"
+    >
+      <strong>
+        <span>
+          0
+        </span>
+        만 개의
+      </strong>
+      여행 리뷰
+    </li>
+    <li
+      class="c1"
+    >
+      <strong>
+        <span>
+          0
+        </span>
+        만 개의
+      </strong>
+      여행 일정
+    </li>
+  </ul>
+</div>
+`;
