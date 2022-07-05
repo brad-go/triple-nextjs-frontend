@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MetricItem should be rendered 1`] = `
+.c0 {
+  display: inline-block;
+}
+
+.c0 strong {
+  font-weight: bold;
+}
+
+@media screen and (min-width:1142px) {
+  .c0 {
+    font-size: 36px;
+    -webkit-letter-spacing: -1px;
+    -moz-letter-spacing: -1px;
+    -ms-letter-spacing: -1px;
+    letter-spacing: -1px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c0 {
+    font-size: 20px;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+}
+
+<div>
+  <li
+    class="c0"
+  >
+    <strong>
+      <span>
+        0
+      </span>
+      만 명의
+    </strong>
+    여행자
+  </li>
+</div>
+`;
