@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentLogo should be able to have content 1`] = `
+.c0 {
+  text-align: center;
+  color: #3a3a3ab3;
+}
+
+.c0 div {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.c1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width:1142px) {
+  .c0 {
+    position: absolute;
+    top: 150px;
+    width: 400px;
+    height: 338px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c0 {
+    margin: 80px auto 20px;
+    width: 200px;
+    height: 169px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width:1142px) {
+  .c1 {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c1 {
+    top: 137px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="logo"
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+      <p
+        class="c1"
+      >
+        2021년 12월 기준
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ContentLogo should be rendered 1`] = `
+.c0 {
+  text-align: center;
+  color: #3a3a3ab3;
+}
+
+.c0 div {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.c1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width:1142px) {
+  .c0 {
+    position: absolute;
+    top: 150px;
+    width: 400px;
+    height: 338px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c0 {
+    margin: 80px auto 20px;
+    width: 200px;
+    height: 169px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width:1142px) {
+  .c1 {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c1 {
+    top: 137px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="logo"
+          data-nimg="fill"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+      <p
+        class="c1"
+      />
+    </div>
+  </div>
+</div>
+`;
