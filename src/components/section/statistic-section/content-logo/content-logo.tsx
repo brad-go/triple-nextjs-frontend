@@ -59,7 +59,14 @@ function Logo(
   return (
     <LogoContainer ref={ref} style={style}>
       <div>
-        <Image src={logo} alt="logo" layout="fill" />
+        <Image
+          src={logo}
+          alt="logo"
+          layout="fill"
+          priority
+          placeholder="blur"
+          blurDataURL={logo}
+        />
         <LogoText>{children}</LogoText>
       </div>
     </LogoContainer>
