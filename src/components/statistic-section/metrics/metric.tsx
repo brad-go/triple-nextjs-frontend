@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 import MetricItem from './metric-item'
 
-import { MetricItemList } from 'constants/metrics'
+import { METRIC_LIST, MetricList } from 'constants/metrics'
+
+interface MetricProps {
+  metrics?: MetricList[]
+}
 
 const MetricsContaienr = styled.ul`
   display: flex;
@@ -22,10 +26,10 @@ const MetricsContaienr = styled.ul`
   }
 `
 
-function Metric() {
+function Metric({ metrics = METRIC_LIST }: MetricProps) {
   return (
     <MetricsContaienr>
-      {MetricItemList.map(({ metric, unit, subject }, idx) => (
+      {metrics.map(({ metric, unit, subject }, idx) => (
         <MetricItem key={idx} metric={metric} unit={unit} subject={subject} />
       ))}
     </MetricsContaienr>

@@ -33,4 +33,25 @@ describe('Metric', () => {
     expect(getAllByText('100')[0]).toBeInTheDocument()
     expect(getAllByText('460')[0]).toBeInTheDocument()
   })
+
+  it('should be rendered with custom metrics', () => {
+    const METRIC_LIST = [
+      {
+        id: 1,
+        metric: 300,
+        unit: '만 장의',
+        subject: '여행 사진',
+      },
+      {
+        id: 2,
+        metric: 100,
+        unit: '곳 이상의',
+        subject: '여행지',
+      },
+    ]
+
+    const { getByText } = render(<Metric metrics={METRIC_LIST} />)
+    expect(getByText(METRIC_LIST[0].subject)).toBeInTheDocument()
+    expect(getByText(METRIC_LIST[1].subject)).toBeInTheDocument()
+  })
 })
