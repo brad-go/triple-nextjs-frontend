@@ -14,6 +14,8 @@
 4. [핵심 기능 구현](#gear-4-핵심-기능-구현)
 5. [디렉토리 구조](#open_file_folder-5-디렉토리-구조)
 
+<br />
+
 ## :speaking_head: 1. 프로젝트 소개
 
 > Next.js와 TypeScript를 사용해 트리플 홈페이지의 한 섹션을 구현합니다.
@@ -22,6 +24,7 @@
 - 제작 기간: 2022.06.29 ~ 2022.07.06
 
 [⬆️ Back to top](#목차)
+
 <br />
 
 ## :wrench: 2. 사용된 기술 스택
@@ -65,6 +68,7 @@
 - Jest와 Testing Library를 사용해 단위 테스트를 진행하고, 나아가 통합 테스트를 해보고 싶어서 사용했습니다.
 
 [⬆️ Back to top](#목차)
+
 <br />
 
 ## :electric_plug: 3. 저장소 사용방법
@@ -112,6 +116,7 @@ yarn test 'metric'
 ```
 
 [⬆️ Back to top](#목차)
+
 <br />
 
 ## :gear: 4. 핵심 기능 구현
@@ -211,7 +216,7 @@ function Metrics(
 const Metric = forwardRef<HTMLUListElement, MetricProps>(Metrics)
 ```
 
-</div></details><br />
+</div></details>
 
 ### 4-2. 숫자가 올라가는 애니메이션
 
@@ -277,6 +282,7 @@ export default useCount
 </div></details><br />
 
 [⬆️ Back to top](#목차)
+
 <br />
 
 ## :open_file_folder: 5. 디렉토리 구조
@@ -307,3 +313,5 @@ export default useCount
 ```
 
 폴더 구조에 대해 고민을 많이했지만, 제대로 구조를 나누지 못한 것 같습니다. 한 섹션만을 구현하다보니, 공통으로 사용할 만한 컴포넌트를 뽑아내기 어려웠고, page가 나누어져 있지 않기 때문에 컴포넌트들을 나누기 더 어려웠던 것 같습니다. 많이 아쉬움이 남지만 차후 수정해보도록 하겠습니다.
+
+[⬆️ Back to top](#목차)
