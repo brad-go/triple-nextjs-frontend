@@ -1,11 +1,14 @@
-import styled from 'styled-components'
+import { forwardRef } from 'react'
+import styled, { CSSProperties } from 'styled-components'
 
 import MetricItem from './metric-item'
 
 import { METRIC_LIST, MetricList } from 'constants/metrics'
+import type { UlRefType } from 'types/section'
 
 interface MetricProps {
   metrics?: MetricList[]
+  style?: CSSProperties
 }
 
 const MetricsContaienr = styled.ul`
@@ -26,14 +29,19 @@ const MetricsContaienr = styled.ul`
   }
 `
 
-function Metric({ metrics = METRIC_LIST }: MetricProps) {
+function Metrics(
+  { metrics = METRIC_LIST, style }: MetricProps,
+  ref: UlRefType,
+) {
   return (
-    <MetricsContaienr>
+    <MetricsContaienr ref={ref} style={style}>
       {metrics.map(({ metric, unit, subject }, idx) => (
         <MetricItem key={idx} metric={metric} unit={unit} subject={subject} />
       ))}
     </MetricsContaienr>
   )
 }
+
+const Metric = forwardRef<HTMLUListElement, MetricProps>(Metrics)
 
 export default Metric

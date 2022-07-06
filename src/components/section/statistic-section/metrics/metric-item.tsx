@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { useCount } from 'hooks/useCount'
+import { useCount } from 'hooks/index'
 
 interface MetricItemProps {
   metric: number

@@ -1,9 +1,12 @@
-import styled from 'styled-components'
+import { forwardRef } from 'react'
+import styled, { CSSProperties } from 'styled-components'
 
 import { AwardList, AWARD_LIST } from 'constants/awards'
+import { UlRefType } from 'types/section'
 
 interface AwardProps {
   awards?: AwardList[]
+  style?: CSSProperties
 }
 
 const AwardItem = styled.li<{ src: string }>`
@@ -48,9 +51,9 @@ const AwardContainer = styled.ul`
   }
 `
 
-function Award({ awards = AWARD_LIST }: AwardProps) {
+function Awards({ awards = AWARD_LIST, style }: AwardProps, ref: UlRefType) {
   return (
-    <AwardContainer>
+    <AwardContainer ref={ref} style={style}>
       {awards.map(({ id, platform, award, image }) => (
         <AwardItem key={id} src={image}>
           {platform}
@@ -61,5 +64,7 @@ function Award({ awards = AWARD_LIST }: AwardProps) {
     </AwardContainer>
   )
 }
+
+const Award = forwardRef<HTMLUListElement, AwardProps>(Awards)
 
 export default Award

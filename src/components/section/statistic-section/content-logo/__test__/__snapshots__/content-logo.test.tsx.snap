@@ -23,10 +23,11 @@ exports[`ContentLogo should be able to have content 1`] = `
 @media screen and (min-width:1142px) {
   .c0 {
     position: absolute;
-    top: 150px;
+    padding-top: 150px;
     width: 400px;
     height: 338px;
     font-size: 15px;
+    font-family: sans-serif;
   }
 }
 
@@ -101,10 +102,11 @@ exports[`ContentLogo should be rendered 1`] = `
 @media screen and (min-width:1142px) {
   .c0 {
     position: absolute;
-    top: 150px;
+    padding-top: 150px;
     width: 400px;
     height: 338px;
     font-size: 15px;
+    font-family: sans-serif;
   }
 }
 

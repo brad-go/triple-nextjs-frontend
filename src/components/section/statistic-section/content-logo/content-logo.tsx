@@ -1,10 +1,13 @@
 import Image from 'next/image'
-import styled from 'styled-components'
+import { forwardRef } from 'react'
+import styled, { CSSProperties } from 'styled-components'
 
 import { LOGO_IMAGE } from 'constants/image'
+import type { DivRefType } from 'types/section'
 
 interface ContentLogoProps {
   logo?: string
+  style?: CSSProperties
   children?: string
 }
 
@@ -14,10 +17,11 @@ const LogoContainer = styled.div`
 
   @media ${({ theme }) => theme.device.pc} {
     position: absolute;
-    top: 150px;
+    padding-top: 150px;
     width: 400px;
     height: 338px;
     font-size: 15px;
+    font-family: sans-serif;
   }
 
   @media ${({ theme }) => theme.device.mobile} {
@@ -48,9 +52,12 @@ const LogoText = styled.p`
   }
 `
 
-function ContentLogo({ logo = LOGO_IMAGE, children }: ContentLogoProps) {
+function Logo(
+  { logo = LOGO_IMAGE, style, children }: ContentLogoProps,
+  ref: DivRefType,
+) {
   return (
-    <LogoContainer>
+    <LogoContainer ref={ref} style={style}>
       <div>
         <Image src={logo} alt="logo" layout="fill" />
         <LogoText>{children}</LogoText>
@@ -58,5 +65,7 @@ function ContentLogo({ logo = LOGO_IMAGE, children }: ContentLogoProps) {
     </LogoContainer>
   )
 }
+
+const ContentLogo = forwardRef<HTMLDivElement, ContentLogoProps>(Logo)
 
 export default ContentLogo
