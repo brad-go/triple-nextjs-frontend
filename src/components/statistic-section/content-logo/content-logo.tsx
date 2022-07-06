@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 
+import { LOGO_IMAGE } from 'constants/image'
+
 interface ContentLogoProps {
+  logo?: string
   children?: string
 }
 
@@ -45,11 +48,11 @@ const LogoText = styled.p`
   }
 `
 
-function ContentLogo({ children }: ContentLogoProps) {
+function ContentLogo({ logo = LOGO_IMAGE, children }: ContentLogoProps) {
   return (
     <LogoContainer>
       <div>
-        <Image src="/images/triple2x.png" alt="logo" layout="fill" />
+        <Image src={logo} alt="logo" layout="fill" />
         <LogoText>{children}</LogoText>
       </div>
     </LogoContainer>
