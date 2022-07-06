@@ -15,3 +15,13 @@ export const Default = Template.bind({})
 Default.args = {
   children: '2021년 12월 기준',
 }
+
+export const Mobile = Template.bind({})
+Mobile.args = {
+  children: '2021년 12월 기준',
+}
+Mobile.parameters = {
+  viewport: {
+    defaultViewport: 'mobile2',
+  },
+}
