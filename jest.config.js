@@ -20,6 +20,7 @@ const customJestConfig = {
     '^.+\\.(js|jsx)$': ['babel-jest', { presets: ['next/babel'] }],
     '^.+\\.(ts|tsx)$': ['ts-jest', { presets: ['next/babel'] }],
   },
+  transfromIgnorePatterns: ['<rootDir>/src/utils/test.tsx'],
 }
 
 module.exports = createJestConfig(customJestConfig)
