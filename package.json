@@ -16,7 +16,8 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "test": "jest --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "chromatic": "npx chromatic --project-token=50dec0f3e90e"
   },
   "dependencies": {
     "next": "12.2.0",
@@ -49,6 +50,7 @@
     "babel-jest": "^28.1.2",
     "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.7",
+    "chromatic": "^6.7.0",
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.0",
     "eslint-config-prettier": "^8.5.0",
@@ -82,5 +84,7 @@
       "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "tripple-clone@0.1.0"
 }
