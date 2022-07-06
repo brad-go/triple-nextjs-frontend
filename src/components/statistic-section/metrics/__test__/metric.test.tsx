@@ -26,7 +26,7 @@ describe('Metric', () => {
     const { getAllByText } = render(<Metric />)
 
     act(() => {
-      jest.advanceTimersByTime(3000)
+      jest.advanceTimersByTime(2000)
     })
 
     expect(getAllByText('700')[0]).toBeInTheDocument()
