@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState } from 'react'
 
 import { easeOutExpo } from 'utils/easing'
 
-export const useCount = (end: number, start = 0, duration = 2000) => {
+const useCount = (end: number, start = 0, duration = 2000) => {
   const [count, setCount] = useState<number>(start)
 
   const frameRate = 1000 / 120
@@ -28,3 +28,5 @@ export const useCount = (end: number, start = 0, duration = 2000) => {
 
   return count
 }
+
+export default useCount
