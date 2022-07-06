@@ -1,7 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import styled from 'styled-components'
 
-import ResponsiveSection, { ResponsiveSectionType } from './responsive-section'
+import ResponsiveSection from './responsive-section'
+
+import type { ResponsiveSectionType } from 'types/section'
 
 export default {
   title: 'section/responsive-section',

@@ -1,7 +1,9 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import styled from 'styled-components'
 
-import SectionContainer, { SectionBackgroundStyle } from './section-container'
+import SectionContainer from './section-container'
+
+import type { SectionBackgroundStyle } from 'types/section'
 
 export default {
   title: 'section/section-container',

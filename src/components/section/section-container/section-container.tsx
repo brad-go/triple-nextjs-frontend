@@ -1,12 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export type SectionBackgroundStyle =
-  | 'default'
-  | 'primary'
-  | 'secondary'
-  | 'toolbox'
-  | 'recruit'
-  | 'footer'
+import type { SectionBackgroundStyle } from 'types/section'
 
 const SECTION_BACKGROUND_STYLES: Partial<
   Record<SectionBackgroundStyle, ReturnType<typeof css>>
