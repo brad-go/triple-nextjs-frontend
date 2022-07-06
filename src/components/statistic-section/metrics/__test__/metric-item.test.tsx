@@ -27,7 +27,7 @@ describe('MetricItem', () => {
     render(<MetricItem metric={700} unit="만 명의" subject="여행자" />)
 
     act(() => {
-      jest.advanceTimersByTime(3000)
+      jest.advanceTimersByTime(2000)
     })
 
     expect(screen.getAllByText('700')[0]).toBeInTheDocument()
