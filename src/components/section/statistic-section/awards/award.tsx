@@ -16,6 +16,7 @@ const AwardItem = styled.li<{ src: string }>`
   color: ${({ theme }) => theme.color.gray800};
 
   @media ${({ theme }) => theme.device.pc} {
+    height: 54px;
     margin-right: 39px;
     padding: 5px 0px 5px 62px;
     background-size: 54px 54px;
@@ -35,6 +36,8 @@ const AwardItem = styled.li<{ src: string }>`
 `
 
 const AwardContainer = styled.ul`
+  white-space: nowrap;
+
   @media ${({ theme }) => theme.device.pc} {
     margin: 50px 0px 140px 623px;
   }

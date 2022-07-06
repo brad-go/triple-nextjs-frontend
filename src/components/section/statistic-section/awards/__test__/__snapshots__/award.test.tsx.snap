@@ -21,8 +21,13 @@ exports[`Award should be rendered 1`] = `
   color: #3a3a3acc;
 }
 
+.c0 {
+  white-space: nowrap;
+}
+
 @media screen and (min-width:1142px) {
   .c1 {
+    height: 54px;
     margin-right: 39px;
     padding: 5px 0px 5px 62px;
     background-size: 54px 54px;
@@ -46,6 +51,7 @@ exports[`Award should be rendered 1`] = `
 
 @media screen and (min-width:1142px) {
   .c2 {
+    height: 54px;
     margin-right: 39px;
     padding: 5px 0px 5px 62px;
     background-size: 54px 54px;
