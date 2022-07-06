@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 
+import { StatisticSection } from 'components/section'
+
 const Home: NextPage = () => {
-  return <div>Home</div>
+  return <StatisticSection />
 }
 
 export default Home
