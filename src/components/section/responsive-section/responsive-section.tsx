@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { setUnit } from 'utils/unit'
-
-export type ResponsiveSectionType = 'default' | 'primary' | 'heading' | 'footer'
+import type { ResponsiveSectionType } from 'types/section'
 
 const resizeElementByMediaSize = (
   pcHeight: number | string = 'auto',
