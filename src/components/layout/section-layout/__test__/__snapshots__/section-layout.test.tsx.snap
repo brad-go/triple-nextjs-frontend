@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionLayout should be rendered 1`] = `
+.c0 {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  background-origin: inherit;
+  background-clip: inherit;
+  background-color: inherit;
+}
+
+.c1 {
+  position: relative;
+  margin: 0px auto;
+}
+
+@media screen and (min-width:1142px) {
+  .c1 {
+    width: 1040px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:1141px) {
+  .c1 {
+    width: 360px;
+    height: auto;
+  }
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </section>
+</div>
+`;
