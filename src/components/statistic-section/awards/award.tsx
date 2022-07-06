@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 import { AwardList, AWARD_LIST } from 'constants/awards'
 
-const AwardItem = styled.li<{ src?: string }>`
+interface AwardProps {
+  awards?: AwardList[]
+}
+
+const AwardItem = styled.li<{ src: string }>`
   display: inline-block;
   background-image: ${({ src }) => `url(${src})`};
   background-position: left top;
@@ -40,10 +44,6 @@ const AwardContainer = styled.ul`
     margin: 50px auto 80px;
   }
 `
-
-interface AwardProps {
-  awards?: AwardList[]
-}
 
 function Award({ awards = AWARD_LIST }: AwardProps) {
   return (
