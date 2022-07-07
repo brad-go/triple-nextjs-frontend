@@ -35,7 +35,7 @@ function MetricItem({ metric, unit, subject }: MetricItemProps) {
         <span>{count}</span>
         {unit}
       </strong>
-      {subject}
+      {' ' + subject}
     </MetricListItem>
   )
 }
